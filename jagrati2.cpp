@@ -1,14 +1,17 @@
 #include<stdio.h>
+void printhello();
+void printgoodbye();
+
 int main()
 {
-	int n;
-	printf("enter number");
-	scanf("%d",&n);
-	int fact=1;
-	for(int i=1;i<=n;i++)
-	{
-		fact=fact*i;
-	}
-	printf("%d",fact);
+	printhello();
+	printgoodbye();
 	return 0;
+	
+}
+void printhello(){
+	printf("hello\n");
+}
+void printgoodbye(){
+	printf("goodbye\n");
 }
